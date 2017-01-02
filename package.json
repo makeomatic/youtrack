@@ -1,0 +1,45 @@
+{
+  "name": "youtrack",
+  "version": "1.0.0",
+  "description": "Youtrack REST API Provider, including OAuth flow",
+  "main": "./lib/index.js",
+  "scripts": {
+    "compile": "rm -rf ./lib; babel -d ./lib --copy-files ./src",
+    "lint": "eslint ./src",
+    "prepublish": "npm run lint && npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makeomatic/youtrack.git"
+  },
+  "keywords": [
+    "youtrack",
+    "rest",
+    "api",
+    "oauth"
+  ],
+  "author": "Vitaly Aminev <v@makeomatic.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makeomatic/youtrack/issues"
+  },
+  "homepage": "https://github.com/makeomatic/youtrack#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-es2015-spread": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-plugin-transform-strict-mode": "^6.18.0",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-promise": "^3.4.0"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "axios": "^0.15.3",
+    "lodash.defaults": "^4.2.0",
+    "oauth2-implicit": "^0.7.0"
+  }
+}
